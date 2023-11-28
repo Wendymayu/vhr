@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 52wendyma
+    url: jdbc:mysql://124.223.27.13:3306/vhr?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 124.223.27.13
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 100
+  redis:
+    host: 124.223.27.13
+    port: 6379
+    password: 52wendyma
+    connect-timeout: 10000
+  cache:
+    cache-names: menus_cache
+  mail:
+    host: smtp.qq.com
+    protocol: smtp
+    default-encoding: UTF-8
+    password: fzvarxpndockbaeg
+    username: 1510161612@qq.com
+    port: 587
+server:
+  port: 8081
+  compression:
+    enabled: true
+fastdfs:
+  nginx:
+    host: http://192.168.91.128/

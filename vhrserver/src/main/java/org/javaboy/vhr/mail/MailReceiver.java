@@ -1,4 +1,4 @@
-package org.javaboy.mailserver.receiver;
+package org.javaboy.vhr.mail;
 
 import com.rabbitmq.client.Channel;
 import org.javaboy.vhr.model.Employee;
